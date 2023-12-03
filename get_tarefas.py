@@ -22,14 +22,11 @@ def get_tarefas():
     # nav = webdriver.Chrome()
 
     def fxpath(string):
-        macaco = nav.find_element_by_xpath(string)
-        return macaco
+        return nav.find_element_by_xpath(string)
     def fname(string):
-        macaco = nav.find_element_by_name(string)
-        return macaco
+        return nav.find_element_by_name(string)
     def fclass(string):
-        macaco = nav.find_element_by_class_name(string)
-        return macaco
+        return nav.find_element_by_class_name(string)
 
     link = "https://sigaa.ifsc.edu.br/sigaa/public/home.jsf"
     nav.get(link)
